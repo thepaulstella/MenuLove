@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MenuLove" customModuleProvider="target">
+            <connections>
+                <outlet property="currentAlbum" destination="cmZ-Jn-yhL" id="pHb-Wb-GdF"/>
+                <outlet property="currentArtist" destination="vqK-g3-yWD" id="CdL-cY-xt3"/>
+                <outlet property="currentSong" destination="lSr-CN-4N4" id="ESy-B5-5ty"/>
+                <outlet property="loveTrack" destination="Wy0-Z3-jLC" id="pa2-q1-3Is"/>
+                <outlet property="statusMenu" destination="4EH-o5-L9q" id="QBp-R8-xFX"/>
+                <outlet property="unloveTrack" destination="lqO-Re-Nbp" id="lhI-in-zJ2"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="4EH-o5-L9q">
+            <items>
+                <menuItem title="😍" id="Wy0-Z3-jLC">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="loveClicked:" target="Voe-Tx-rLC" id="6fJ-h0-J8e"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="1jg-04-LnD"/>
+                <menuItem title="💀" id="lqO-Re-Nbp">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="unloveClicked:" target="Voe-Tx-rLC" id="Yv9-xa-I7L"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="VrB-rg-kEn"/>
+                <menuItem title="Artist: " id="vqK-g3-yWD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Song: " id="lSr-CN-4N4">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Album: " id="cmZ-Jn-yhL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="4rf-r4-Y18"/>
+                <menuItem title="Quit" id="DMS-4g-kRK">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="34c-YS-Q80"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
